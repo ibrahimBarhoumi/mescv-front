@@ -1,0 +1,6 @@
+<ul>
+	<li *ngFor="let person of persons;">
+		<app-item-cv (selectedPerson)="sendSelectPerson($event)"[person]="person"></app-item-cv>
+	</li>
+</ul>
+
